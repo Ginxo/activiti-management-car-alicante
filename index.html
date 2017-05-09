@@ -24,8 +24,8 @@
 </head>
 <body>
 <div class="reveal">
+    <img id="logobusiness" src="images/everis_logo.png">
     <div class="slides">
-        <img src="images/everis_logo.png">
         <section>
             <h1>AMCA</h1>
             <h2>Activiti Management CAR Alicante</h2>
@@ -63,22 +63,24 @@
             <ul>
                 <li>¿Qué es AMCA?</li>
                 <li>¿Qué nos aporta?</li>
+                <li>¿Cómo lo usamos?</li>
             </ul>
         </section>
         <section>
             <h1>¿Qué es AMCA?</h1>
             <p>Es un framework que nos permite añadir un servicio de BPM en nuestras aplicaciones</p>
-            <img src="images/logos.png" alt="stack logos" class="partial"  width="75%" />
+            <img src="images/logos.png" alt="stack logos" class="partial" width="75%"/>
         </section>
         <section>
-            <h1>¿Qué nos aporta?</h1>
             <section>
+                <h1>¿Qué nos aporta?</h1>
                 <ul>
                     <li>Ganamos tiempo</li>
                     <li>Una arquitectura solida y viva</li>
                     <li>Utilidades</li>
                     <li>Gestión de excepciones</li>
                     <li>Herramienta de regresión</li>
+                    <li>Totalmente desacoplado</li>
                 </ul>
             </section>
             <section>
@@ -91,20 +93,20 @@
                             <li>Test de integración</li>
                         </ul>
                     </li>
-                    <li>Utilidades costaría varios meses de desarrollo</li>
+                    <li>
+                        Utilidades
+                        <ul>
+                            <li>Nos llevaría varios meses de desarrollo alcanzar este estado</li>
+                        </ul>
+                    </li>
+                    <li>Arquitectura sólida</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Utilidades</h2>
+                <h3>Herremienta de regresión</h3>
 
-                </ul>
-            </section>
-            <section>
-                <h1>Una arquitectura sólida y viva</h1>
-                <ul>
-                    <li>Imágenes</li>
-                </ul>
-            </section>
-            <section>
-                <h1>Utilidades</h1>
-                <h2>Herremienta de regresión</h2>
-                <p>Imagen</p>
+
             </section>
             <section>
                 <h1>Utilidades</h1>
@@ -116,9 +118,23 @@
                 <h2>Gestión de excepciones</h2>
                 <p>Imagen</p>
             </section>
+            <section>
+                <h2>Utilidades</h2>
+                <h3>Gestión de Tareas</h3>
+            </section>
         </section>
         <section>
-            <h1>¿Cómo implantarlo en proyectos?</h1>
+            <h2>¿Cómo lo añadimos en nuestro proyecto?</h2>
+            <p>Añadiendo una dependencia o herendando la librería</p>
+            <pre>
+                <code class="language-xml" data-trim>
+                    <parent>
+                        <artifactId>activiti-management</artifactId>
+                        <groupId>com.everis.alicante.activiti</groupId>
+                        <version>1.0.0-RELEASE</version>
+                    </parent>
+                </code>
+            </pre>
         </section>
     </div>
 </div>
@@ -144,8 +160,8 @@
                 hljs.initHighlightingOnLoad();
             }
             },
-            { src: 'plugin/zoom-js/zoom.js', async: true },
-            { src: 'plugin/remotes/remotes.js', async: true }
+            {src: 'plugin/zoom-js/zoom.js', async: true},
+            {src: 'plugin/remotes/remotes.js', async: true}
         ]
     });
 </script>
